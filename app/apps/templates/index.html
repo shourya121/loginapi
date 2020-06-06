@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+
+  </head>
+  <body>
+    <h1>PLEASE FILL UP THE FORM TO REGISTER</h1>
+     <form  enctype="multipart/form-data "method="post">
+        {% csrf_token%}
+      <b>{{form.as_p}}</b>
+
+      <input type="submit"  value="Register">
+      </form>
+
+
+
+
+
+  </body>
+</html>
